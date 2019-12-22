@@ -1,0 +1,3175 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+  
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a{
+  text-decoration: none
+}
+
+img{
+  max-width: 100%;
+}
+
+input{
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.clearfix{
+  clear: both;
+}
+
+.header{
+  max-width: 100%;
+  position: relative;
+  
+}
+
+.header h1{
+  float: left;
+  margin-top: 1em;
+  margin-left: 30px;
+}
+
+.header h1 a{
+  background-image: url(../images/logo-word.svg);
+  background-repeat: no-repeat;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  width: 150px;
+  height: 30px;
+
+}
+
+.nav-container{
+  position: 
+}
+/* iphone5 */
+
+@media(max-width: 320px){
+.header h1{
+  float: left;
+  margin-top: 1em;
+  margin-left: 20px;
+}
+
+}
+
+
+
+.nav-bar {
+  float: right;
+}
+
+.nav-bar li {
+  float: left;
+
+}
+
+.nav-bar li a{
+    text-decoration: none;
+    padding: 2em 3em;
+    color: #707070;
+    display: block;
+    font-size: 14px;
+}
+
+
+/*在PC上隱藏漢堡選單*/
+.showmenu{
+  display: none;
+}
+
+
+/* ipad */
+
+@media(max-width: 768px){
+
+.showmenu{
+  float: right;
+  display: block;
+  padding: 17px 50px 0px 50px;
+}
+
+.menu-show .nav-bar{
+  max-height: 280px;
+}
+
+.nav-bar{
+  
+  max-height: 0px;
+  overflow: hidden;
+  
+  /*隱藏選單結束*/
+  transition: max-height 2.3s;
+  margin-top: 1px;
+  /*絕對定位疊在網頁上*/
+  position: absolute;
+  z-index: 100;
+  /*header 80px+1px boder 線條*/
+  top: 65px;
+  left: 0;
+  right: 0;
+  background: #272727;
+}  
+
+.nav-bar li {
+  float: none;
+}
+
+.nav-bar li a{
+  color: white;
+}
+
+.nav-bar li:hover{
+  background: #0F222B;
+}
+
+
+
+}
+
+
+/* iphone5 */
+
+@media(max-width: 320px){
+
+.showmenu{
+  float: right;
+  display: block;
+  padding: 17px 25px 0px 25px;
+}
+
+
+}
+
+
+
+
+
+.swiper-container {
+  width: 100%;
+  height: 600px;
+}
+
+.swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+
+}
+
+/* ipad */
+
+@media(max-width: 768px){
+
+.swiper-container {
+  width: 100%;
+  height: 500px;
+} 
+
+}
+
+
+/* iphone5 */
+
+@media(max-width: 320px){
+
+.swiper-container {
+  width: 100%;
+  height: 420px;
+} 
+
+.swiper-slide img{
+  height: 420px;
+  max-width: 100%;
+}
+
+}
+
+
+.main{
+  margin: 0 auto;
+  width: 100%;
+  
+}
+
+.feature-banner{
+  background-image: url(../images/banner_1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-span{
+  color: white;
+  display: block;
+  font-size: 25px;
+  letter-spacing: 5px;
+  padding-top: 80px;
+  text-align: center;
+
+}
+
+
+.feature-banner li{
+  float: left;
+  width: 30.3333%;
+  padding: 0 20px;
+  padding: 10px;
+  display: block;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+
+.feature-banner a{
+  display: block;
+  text-align: center;
+
+}
+
+.feature-banner h2{
+  color: #D9C6AC;
+  letter-spacing: 5px;
+  margin-top: 18px;
+  font-size: 20px;　   
+}
+
+.feature-banner p{
+  color: white;
+  font-size: 16px;
+  margin-top: 18px;
+  line-height: 20px;
+}
+
+
+/* ipad */
+
+@media(max-width: 768px){
+
+.feature-banner{
+  width: 100%;
+  background-image: url(../images/banner-ipad.png); 
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.feature-banner li{
+  width: 45.3333%;
+}
+
+
+}
+
+
+/* iphone5 */
+
+@media(max-width: 320px){
+
+.feature-banner{
+  width: 100%;
+  background-image: url(../images/banner-ipad.png); 
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.feature-banner li{
+  width: 98.9999%;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+
+.bg-span{
+  font-size: 25px;
+  letter-spacing: 5px;
+  line-height: 50px;
+  padding-top: 80px;
+  text-align: center;
+
+}
+
+
+
+}
+
+
+
+
+
+
+.section{
+  padding: 50px 10% 50px 10%;
+  background: #F7F7F7;
+}
+
+.section-banner{
+  float: left;
+  width: 28%;
+}
+
+
+
+.summary{
+  float: left;
+  width: 60%;
+  font-size: 30px;
+  color: #272727;
+  line-height: 50px;
+  white-space: 60px;
+  padding: 2em 2em;
+}
+
+
+/* ipad */
+
+@media(max-width: 768px){
+
+.section{
+  padding: 50px 10% 50px 10%;
+  background: #F7F7F7;
+}
+
+.section-banner{
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.summary{
+  float: none;
+  width: 100%;
+  font-size: 30px;
+  color: #272727;
+  line-height: 50px;
+  white-space: 60px;
+  padding: 2em 0em;
+}
+
+}
+
+
+
+/* iphone5 */
+
+@media(max-width: 320px){
+
+.section-banner{
+  text-align: center;
+}
+}
+
+
+
+
+
+.member-bar{
+  background-image: url(https://upload.cc/i1/2019/10/29/hANjQO.png);
+  background-size: cover;
+  padding: 4rem 5rem;
+}
+
+.member-bar h2{
+  float: left;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 3px;
+  line-height: 2em;
+
+}
+
+.member-click{
+  float: right;
+}
+
+
+.member-click h3{
+  color: white;
+  font-size: 18px;
+  letter-spacing: 3px;
+  line-height: 2em;;
+  margin-bottom: 10px;
+
+}
+
+
+
+.mc-one{
+  color: #322525;
+  transition: all 0.5s;
+  position: relative;
+  background: #E6D351;
+  font-size: 14px;
+  padding: 1em 1.2em;
+  border-radius: 5px;
+  margin-right: 1em;
+  display: block;
+  float: left;
+}
+
+.mc-one:before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+background-color: #FFC408;
+transition: all 0.3s;
+border-radius: 5px;
+opacity: 0.2 ;
+}
+
+.mc-one:hover:before{
+opacity: 0 ;
+transform: scale(0.5,0.5);
+}
+.mc-one:after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+opacity: 0;
+transition: all 0.3s;
+border: 1px solid rgba(255,255,255,0.5);
+border-radius: 5px;
+transform: scale(1.2,1.2);
+}
+.mc-one:hover:after{
+opacity: 1;
+transform: scale(1,1);
+}
+
+.mc-two{
+  border: 1px solid white;
+  color: white;
+  font-size: 14px;
+  padding: 1em 1.2em;
+  border-radius: 5px;
+  display: block;
+  float: left;
+}
+
+.mc-two:hover{
+  color: #322525;
+  background: white;
+  transition: all .5s;
+}
+
+
+
+/* ipad */
+
+@media(max-width: 768px){
+
+.member-bar{
+  height: 350px;
+  background-image: url(../images/cake-ipad.png);
+  background-size: cover;
+  background-position: right;
+}
+
+.member-bar h2{
+  float: none;
+  margin-left: 0px;
+  margin-top: 0px;
+  text-align: center;
+
+}
+
+.member-click{
+  float: none;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+
+
+.member-click h3{
+  margin-right: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.mc-one{
+  margin-right: 1em;
+  float: none;
+  display: inline-block;
+  margin-top: 20px;
+  text-align: center;
+  
+}
+
+.mc-two{
+  padding: 1em 1.2em;
+  border-radius: 5px;
+  float: none;
+  display: inline-block;
+  text-align: center;
+  
+}
+
+.member-click{
+  text-align: center;
+}
+
+}
+
+
+/* iphone5 */
+
+@media(max-width: 320px){
+
+.member-bar{
+  height: 450px;
+  background-image: url(../images/cake-ipad.png);
+  background-size: cover;
+  background-position: right;
+  padding: 2rem 3rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+.footer{
+  background: #272727;
+  color: white;
+}
+
+.footer-content{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.footer-img, .widget{
+  float: left;
+}
+
+.footer-img a{
+  margin-left: 112px;
+}
+
+.row{
+  width: 25%;
+  float: left;
+  
+}
+
+.widget{
+   width: 90%
+}
+
+.widget li a{
+  color: white;
+  line-height: 30px;
+}
+
+.p-line{
+  line-height: 30px;
+}
+.title{
+  font-size: 20px;
+}
+
+hr{
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0 0 24px;
+  margin: 20px 0 20px 0;
+  
+}
+
+.date{
+  font-size: 12px;
+  display: block;
+  margin-top: 15px;
+}
+
+.footer-bottom {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.footer-bottom li{
+  float: left;
+}
+
+.footer-bottom-logo{
+  float: right;
+}
+
+.footer-bottom p{
+  float: left;
+  font-size: 12px;
+}
+
+
+.footer-bottom-logo a{
+  display: block;
+  padding: 0 .5em;
+}
+
+
+/* ipad */
+
+@media(max-width: 768px){
+
+.row{
+  width: 44%;
+  float: left;
+  padding: 2% 2%
+
+  
+}
+
+.footer-img a{
+  margin-left: 25%;
+}
+
+}
+
+
+/* iphone5 */
+
+@media(max-width: 320px){
+
+.footer-content{
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+
+.row{
+  width: 98%;
+  float: none;
+  padding: 2% 2%
+  
+}
+
+.widget{
+   margin-bottom: 25px;
+   margin-top: 30px;
+}
+
+.footer-img a{
+  margin-left: 30%;
+}
+
+.footer-bottom p{
+  text-align: center;
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+.footer-bottom-logo{
+  float: none;
+}
+
+
+}
+
+
+
+
+
+
+.bk-tp{
+  margin-top: 80px;
+  position: relative; 
+}
+
+.back-top{
+  padding: 10px 15px;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  border-radius: 5px;
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  opacity: 70%;
+}
+
+.back-top:hover{
+  opacity: 100%;
+}
+
+
+/* iphone5 */
+
+@media(max-width: 320px){
+
+.back-top{
+  left: 40%;
+}
+}
+
+
+
+
+/*     線上門市     */
+
+.header-shadow{
+  box-shadow: 1px 1px 6px gray;
+}
+
+
+.nav-bar-product a{
+  display: block;
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  padding: 0.5em 2px;
+  color: #707070;
+  text-decoration: none;
+  
+}
+
+
+/* iphone5 */
+
+@media (max-width: 320px){
+  .nav-bar-product a{
+    display: block;
+    float: left;
+    margin: 15px 5%  5%;
+    padding: 0.5em 2px;
+    color: #707070;
+    text-decoration: none;
+  
+}
+
+
+}
+
+
+
+
+
+
+.onl-shop-banner{
+  width: 100%;
+  height: 600px;
+  background-image: url(https://upload.cc/i1/2019/11/10/2ZJcAE.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.onl-shop-container{
+  width: 100%;
+  background-image: url(https://upload.cc/i1/2019/11/11/prmSZ0.png);
+  background-size: cover;
+}
+
+.onl-shop-row{
+  max-width: 1230px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 120px;
+  padding-bottom: 110px;
+}
+
+.onl-shop-banner-new{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 70px;
+  background-image: url(https://upload.cc/i1/2019/11/11/gASsVp.png);
+  background-size: cover;
+  background-position: center top;
+
+
+}
+
+.onl-shop-banner-coffee {
+  float: left;
+  width: 33.33333%;
+  height: 800px;
+  margin-right: 7%;
+  background-image: url(https://upload.cc/i1/2019/11/11/jv7sJ3.png);
+  background-size: cover; 
+  background-position: center top;
+}
+
+.onl-shop-banner-group{
+  float: left;
+  width: 59.66666%;
+}
+
+.onl-sp-br-related{
+  height: 360px;
+  background-image: url(https://upload.cc/i1/2019/11/11/9gFvys.png);
+  background-size: cover; 
+  background-position: center top;
+  margin-bottom: 80px;
+}
+
+.onl-sp-br-gifts{
+  height: 360px;
+  background-image: url(https://upload.cc/i1/2019/11/11/ydWHkc.png);
+  background-size: cover; 
+  background-position: center top;
+}
+
+
+/* ipad */
+
+@media (max-width: 768px){
+  
+  .onl-shop-banner{
+    height: 500px; 
+  }
+
+  .onl-shop-banner-new{
+    width: 90%;
+    height: 400px;
+    margin: 0 5% 70px 5%;
+    background-image: url(../images/new-ipad.png);
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .onl-shop-banner-coffee {
+    float: none;
+    width: 90%;
+    height: 250px;
+    margin: 0 5% 70px 5%;
+    background-image: url(../images/cof-ipad.png);
+    background-size: cover; 
+    background-position: center top;
+  }
+
+  .onl-shop-banner-group{
+    float: none;
+    width: 90%;
+    margin: 0 5% 120px 5%;
+  }
+
+  .onl-sp-br-related{
+    height: 400px;
+    background-image: url(../images/repr-ipad.png);
+    background-size: cover; 
+    background-position: center top;
+    margin-bottom: 80px;
+  }
+
+  .onl-sp-br-gifts{
+    height: 250px;
+    background-image: url(../images/gifts-ipad.png);
+    background-size: cover; 
+    background-position: center;
+  }
+
+
+}
+
+
+/* iphone5 */
+
+@media (max-width: 320px){
+  
+  .onl-shop-banner{
+    height: 420px; 
+  }
+  
+  .nav-bar-1 a{
+    display: block;
+    float: left;
+    margin: 15px 5% 0 5%;
+    padding: 0.5em 2px;
+    color: #707070;
+    text-decoration: none;
+  }
+
+
+  .onl-shop-banner-new{
+    width: 88%;
+    height: 300px;
+    margin: 0 6% 70px 6%;
+    background-image: url(../images/new-ip5.png);
+  }
+
+  .onl-shop-banner-coffee {
+    height: 120px;
+    background-image: url(../images/cof-ip5.png);
+  }
+
+  .onl-shop-banner-group{
+    margin: 0 5% 60px 5%;
+  }
+
+
+  .onl-sp-br-related{
+    height: 300px;
+    background-image: url(../images/repr-ip5.png);
+    margin-bottom: 80px;
+  }
+
+  .onl-sp-br-gifts{
+    height: 120px;
+    background-image: url(../images/gift-ip5.png);
+  }
+
+
+}
+
+/*     products 商品     */
+
+.products-banner{
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/drinks-banner.png);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.products-main{
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 110px 5% 110px 5%;
+}
+
+.pds-content{
+  width: 100%;
+
+}
+
+.pds-text-one, .pds-text-three{
+  width: 31%;
+  height: 380px;
+  padding: 0 2% 0 2%;
+  color: #272727;
+  font-size: 18px;
+  letter-spacing: 5px;
+  line-height: 30px;
+  float: left;
+}
+
+.pds-text-two{
+  width: 31%;
+  height: 380px;
+  padding: 0 2% 0 2%;
+  color: #272727;
+  font-size: 18px;
+  letter-spacing: 5px;
+  line-height: 30px;
+  float: left;
+}
+
+.pds-text-one h3, .pds-text-two h3, .pds-text-three h3{
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.pds-text-one a, .pds-text-two a, .pds-text-three a{
+  text-decoration: none;
+  color: #272727;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+}
+
+.pds-banner-one{
+  width: 65%;
+  height: 380px;
+  margin-bottom: 80px;
+  float: left;
+  background-image: url(../images/milkshake.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.pds-banner-two{
+  width: 65%;
+  height: 380px;
+  margin-bottom: 80px;
+  float: right;
+  background-image: url(../images/cup-cake.jpg);
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.pds-banner-three{
+  width: 65%;
+  height: 380px;
+  float: left;
+  background-image: url(../images/cupss-web.png);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+/* ipad */
+
+@media(max-width: 768px){
+
+  .products-banner{
+    height: 450px;
+    background-image: url(../images/drinks-banner-ipad.png);
+  }
+
+  .pds-text-one, .pds-text-two, .pds-text-three{
+    width: 100%;
+    float: none;
+    height: 190px;
+  }
+
+  .pds-banner-one, .pds-banner-two, .pds-banner-three{
+    width: 100%;
+    float: none;
+  }
+
+  
+}
+
+
+
+/* iphone5 */
+
+@media(max-width: 320px){
+
+  .products-main{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 50px 5% 50px 5%;
+  }
+
+  .products-banner{
+    height: 420px;
+    background-image: url(../images/drinks-banner-ip5.png);
+  }
+
+  .pds-banner-one, .pds-banner-two, .pds-banner-three{
+    width: 100%;
+    height: 180px;
+    float: none;
+    margin-bottom:0px;
+  }
+
+}
+
+
+
+
+
+/*     products drinks 飲料     */
+
+
+.pd-drinks-banner{
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/drinks-banner.png);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.pd-drinks-main{
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 3rem 5% 3rem 5%;
+}
+
+
+.pd-drinks-column{
+  width: 29.3333%;
+  margin: 2% 2%;
+  height: 300px;
+  float: left;
+}
+
+.pd-drinks-column a{
+  display: block;
+}
+
+.pd-drinks-column h3{
+  font-size: 40px;
+  padding: 30px 30px;
+  color: white;
+}
+
+.column-milkshake{
+  background-image: url(../images/milkshake.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.column-juice{
+  background-image: url(../images/ichigo-juice.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.column-coffee{
+  background-image: url(../images/nathan-dumlao.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.column-tea{
+  background-image: url(../images/red-tea.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* ipad */
+
+@media(max-width: 768px){
+
+  .pd-drinks-banner{
+    height: 450px;
+    background-image: url(../images/drinks-banner-ipad.png);
+  }
+
+  .pd-drinks-column{
+    width: 46%;
+    margin: 2% 2%;
+    height: 300px;
+    float: left;
+  }
+  
+}
+
+
+
+/* iphone5 */
+
+@media(max-width: 320px){
+
+  .pd-drinks-banner{
+    height: 420px;
+    background-image: url(../images/drinks-banner-ip5.png);
+  }
+
+  .pd-drinks-column{
+    width: 46%;
+    margin: 2% 2%;
+    height: 150px;
+    float: left;
+  
+  }
+
+  .pd-drinks-column h3{
+    font-size: 20px;
+    padding: 15px 15px;
+    color: white;
+  }
+
+  .column-tea, .column-coffee, .column-juice, .column-milkshake{
+    height: 150px; 
+  } 
+   
+
+}
+
+
+
+/*     pd-drinks-view   飲料選單     */
+
+
+.pd-drinks-banner{
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/drinks-banner.png);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+
+.drinks-view-main{
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 5% 3rem 5%;
+}
+
+
+
+.pd-drinks-list a{
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 4% 0 0 2%;
+  border: 1px solid #272727;
+  border-radius: 5px;
+  float: left;
+  color: #272727;
+
+}
+
+#list-color{
+  border: 1px solid #CC712B;
+  color: #CC712B; 
+}
+
+
+.drinks-view-column{
+  width: 21%;
+  margin: 2% 2%;
+  height: 420px;
+  float: left;
+}
+
+.drinks-view-column h3{
+  font-size: 18px;
+  padding: 0% 8% 8% 8% ;
+  color: black;
+}
+
+.drinks-list-one{
+  background-image: url(../images/milkshake-coco.jpg);
+  height: 300px;
+  margin: 8% 8% ;
+  background-size: cover;
+  background-position: center;
+}
+
+.drinks-list-two{
+  background-image: url(../images/karameru.jpg);
+  height: 300px;
+  margin: 8% 8% ;
+  background-size: cover;
+  background-position: center;
+}
+
+.drinks-list-three{
+  background-image: url(../images/milkshake-ichigo.jpg);
+  height: 300px;
+  margin: 8% 8% ;
+  background-size: cover;
+  background-position: center center;
+}
+
+.drinks-list-four{
+  background-image: url(../images/claudia.jpg);
+  height: 300px;
+  margin: 8% 8% ;
+  background-size: cover;
+  background-position: center;
+}
+
+.drinks-list-five{
+  background-image: url(../images/christmas-milkshake.jpg);
+  height: 300px;
+  margin: 8% 8% ;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* ipad */
+
+@media(max-width: 768px){
+
+  .drinks-view-column{
+    width: 46%;
+    margin: 2% 2%;
+    height: 420px;
+    float: left;
+  }
+
+  .pd-drinks-banner{
+    height: 450px;
+    background-image: url(../images/drinks-banner-ipad.png);
+  }
+
+  
+}
+
+
+
+/* iphone5 */
+
+@media(max-width: 320px){
+
+ 
+
+  .drinks-view-column{
+    width: 48%;
+    margin: 1% 1%;
+    height: 280px;
+    float: left;
+  }
+
+   .pd-drinks-banner{
+    height: 420px;
+    background-image: url(../images/drinks-banner-ip5.png);
+  }
+
+
+
+  .pd-drinks-list a{
+    padding: 8px 10px;
+
+  }
+
+  .drinks-view-column h3{
+    font-size: 15px;
+    padding: 0% 8% 8% 8% ;
+  
+  }
+
+  .drinks-list-one, .drinks-list-two, .drinks-list-three, .drinks-list-four, .drinks-list-five{
+    height: 200px;
+  }
+}
+
+
+
+/*     products bread 麵包     */
+
+
+.pd-food-banner{
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/bread-banner.png);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+
+.pd-food-main{
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 3rem 5% 3rem 5%;
+}
+
+.pd-food-column{
+  width: 29.3333%;
+  margin: 2% 2%;
+  height: 300px;
+  float: left;
+}
+
+.pd-food-column a{
+  display: block;
+}
+
+.pd-food-column h3{
+  font-size: 40px;
+  padding: 30px 30px;
+  color: white;
+}
+
+.column-bread{
+  background-image: url(../images/bread-two.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.column-dessert{
+  background-image: url(../images/pie.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.column-ice{
+  background-image: url(../images/ice.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.column-diet{
+  background-image: url(../images/sandwich.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* ipad */
+
+@media(max-width: 768px){
+
+  .pd-food-column{
+    width: 46%;
+    margin: 2% 2%;
+    height: 300px;
+    float: left;
+  }
+
+  .pd-food-banner{
+    height: 450px;
+    background-image: url(../images/bread-two-ipad.png);
+  }
+  
+}
+
+
+
+/* iphone5 */
+
+@media(max-width: 320px){
+
+  .pd-food-column{
+    width: 46%;
+    margin: 2% 2%;
+    height: 150px;
+    float: left;
+  
+  }
+
+   .pd-food-banner{
+    height: 420px;
+    background-image: url(../images/bread-two-ip5.png);
+  }
+  
+
+  .pd-food-column h3{
+    font-size: 20px;
+    padding: 15px 15px;
+    color: white;
+  }
+
+  .column-bread, .column-dessert, .column-ice, .column-diet{
+    height: 150px; 
+  } 
+   
+
+}
+
+
+/*     pd-food-view   點心選單     */
+
+
+.pd-food-banner{
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/bread-banner.png);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+
+.food-view-main{
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 5% 3rem 5%;
+}
+
+.pd-food-list a{
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 4% 0 0 2%;
+  border: 1px solid #272727;
+  border-radius: 5px;
+  float: left;
+  color: #272727;
+
+}
+
+#list-color{
+  border: 1px solid #CC712B;
+  color: #CC712B; 
+}
+
+
+.food-view-column{
+  width: 21%;
+  margin: 2% 2%;
+  height: 420px;
+  float: left;
+}
+
+.food-view-column h3{
+  font-size: 18px;
+  padding: 0% 8% 8% 8% ;
+  color: black;
+}
+
+.food-list-one{
+  background-image: url(../images/long-bread.jpg);
+  height: 300px;
+  margin: 8% 8% ;
+  background-size: cover;
+  background-position: center;
+}
+
+.food-list-two{
+  background-image: url(../images/bread-1.png);
+  height: 300px;
+  margin: 8% 8% ;
+  background-size: cover;
+  background-position: center;
+}
+
+.food-list-three{
+  background-image: url(../images/bread-2.jpg);
+  height: 300px;
+  margin: 8% 8% ;
+  background-size: cover;
+  background-position: center center;
+}
+
+.food-list-four{
+  background-image: url(../images/bread-3.png);
+  height: 300px;
+  margin: 8% 8% ;
+  background-size: cover;
+  background-position: center;
+}
+
+.food-list-five{
+  background-image: url(../images/bread-4.jpg);
+  height: 300px;
+  margin: 8% 8% ;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* ipad */
+
+@media(max-width: 768px){
+
+  .food-view-column{
+    width: 46%;
+    margin: 2% 2%;
+    height: 420px;
+    float: left;
+  }
+
+  .pd-food-banner{
+    height: 450px;
+    background-image: url(../images/bread-two-ipad.png);
+  }
+
+  
+}
+
+
+
+/* iphone5 */
+
+@media(max-width: 320px){
+
+ 
+
+  .food-view-column{
+    width: 48%;
+    margin: 1% 1%;
+    height: 280px;
+    float: left;
+  }
+
+   .pd-food-banner{
+    height: 420px;
+    background-image: url(../images/bread-two-ip5.png);
+  }
+
+
+
+  .pd-food-list a{
+    padding: 8px 10px;
+
+  }
+
+  .food-view-column h3{
+    font-size: 15px;
+    padding: 0% 8% 8% 8% ;
+  
+  }
+
+  .food-list-one, .food-list-two, .food-list-three, .food-list-four, .food-list-five{
+    height: 200px;
+  }
+}
+
+
+
+
+/*     products life  生活     */
+
+
+.pd-life-banner{
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/coffee-banner.png);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+
+.pd-life-main{
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 3rem 5% 3rem 5%;
+}
+
+
+.pd-life-column{
+  width: 29.3333%;
+  margin: 2% 2%;
+  height: 300px;
+  float: left;
+}
+
+.pd-life-column h3{
+  font-size: 40px;
+  padding: 30px 30px;
+  color: white;
+}
+
+.column-lifestyle{
+  background-image: url(../images/lifestyle.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.column-tool{
+  background-image: url(../images/tools.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.column-cups{
+  background-image: url(../images/word-cup.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.column-stationery{
+  background-image: url(../images/stationery.jpg);
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* ipad */
+
+@media(max-width: 768px){
+
+  .pd-life-column{
+    width: 46%;
+    margin: 2% 2%;
+    height: 300px;
+    float: left;
+  }
+
+  .pd-life-banner{
+    height: 450px;
+    background-image: url(../images/coffee-ipad.png);
+  }
+  
+}
+
+
+
+/* iphone5 */
+
+@media(max-width: 320px){
+
+  .pd-life-column{
+    width: 46%;
+    margin: 2% 2%;
+    height: 150px;
+    float: left;
+  
+  }
+
+   .pd-life-banner{
+    height: 420px;
+    background-image: url(../images/coffee-ip5.png);
+  }
+  
+
+  .pd-life-column h3{
+    font-size: 20px;
+    padding: 15px 15px;
+    color: white;
+  }
+
+  .column-lifestyle, .column-tool, .column-cups, .column-stationery{
+    height: 150px; 
+  } 
+   
+
+}
+
+
+/*     pd-life-view   生活選單     */
+
+
+.pd-life-banner{
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/coffee-banner.png);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+
+.life-view-main{
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 5% 3rem 5%;
+}
+
+
+.pd-life-list a{
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 4% 0 0 2%;
+  border: 1px solid #272727;
+  border-radius: 5px;
+  float: left;
+  color: #272727;
+
+}
+
+#list-color{
+  border: 1px solid #CC712B;
+  color: #CC712B; 
+}
+
+
+.life-view-column{
+  width: 21%;
+  margin: 2% 2%;
+  height: 420px;
+  float: left;
+}
+
+.life-view-column h3{
+  font-size: 18px;
+  padding: 0% 8% 8% 8% ;
+  color: black;
+}
+
+.life-list-one{
+  background-image: url(../images/light-bulb.jpg);
+  height: 300px;
+  margin: 8% 8% ;
+  background-size: cover;
+  background-position: center;
+}
+
+.life-list-two{
+  background-image: url(../images/chair.jpg);
+  height: 300px;
+  margin: 8% 8% ;
+  background-size: cover;
+  background-position: center;
+}
+
+.life-list-three{
+  background-image: url(../images/notebook.jpg);
+  height: 300px;
+  margin: 8% 8% ;
+  background-size: cover;
+  background-position: center center;
+}
+
+.life-list-four{
+  background-image: url(../images/handle.jpg);
+  height: 300px;
+  margin: 8% 8% ;
+  background-size: cover;
+  background-position: center;
+}
+
+.life-list-five{
+  background-image: url(../images/birdd.jpg);
+  height: 300px;
+  margin: 8% 8% ;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* ipad */
+
+@media(max-width: 768px){
+
+  .life-view-column{
+    width: 46%;
+    margin: 2% 2%;
+    height: 420px;
+    float: left;
+  }
+
+  .pd-life-banner{
+    height: 450px;
+    background-image: url(../images/coffee-ipad.png);
+  }
+
+  
+}
+
+
+
+/* iphone5 */
+
+@media(max-width: 320px){
+
+ 
+
+  .life-view-column{
+    width: 48%;
+    margin: 1% 1%;
+    height: 280px;
+    float: left;
+  }
+
+   .pd-life-banner{
+    height: 420px;
+    background-image: url(../images/coffee-ip5.png);
+  }
+
+
+
+  .pd-life-list a{
+    padding: 8px 10px;
+
+  }
+
+  .life-view-column h3{
+    font-size: 15px;
+    padding: 0% 8% 8% 8% ;
+  
+  }
+
+  .life-list-one, .life-list-two, .life-list-three, .life-list-four, .life-list-five{
+    height: 200px;
+  }
+}
+
+
+
+
+
+
+
+/*     shop 門市位置     */
+
+.shop-banner{
+  width: 100%;
+  height: 600px;
+  background-image: url(https://upload.cc/i1/2019/11/16/e0TExG.jpg);
+  background-size: cover;
+}
+
+.shop-main{
+  background-color: #EFE9E7;
+}
+
+.goo-map{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 140px;
+}
+
+.goo-map-title{
+  width: 100%;
+}
+
+.goo-map h3{
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.iframe-rwd {
+    position: relative;
+    padding-bottom: 50%;
+    overflow: hidden;
+
+}
+.iframe-rwd iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.shop-container{
+  width: 100%;
+  background: white;
+}
+
+.shop-form{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.shop-form-title{
+  width: 100%;
+}
+
+.shop-form h3{
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  letter-spacing: 10px;
+  font-size: 20px;
+}
+
+
+.form-textarea{
+  width: 46%;
+  float: left;
+  padding: 0 2%;
+}
+
+.shop-textarea{
+  width: 100%;
+  height: 500px; 
+ 
+}
+
+.form-input{
+  width: 42%;
+  float: left;
+  padding: 0 4%;
+}
+
+.form-input label{
+  display: block;
+  margin-bottom: 20px;
+  
+}
+
+
+.form-input input{
+  margin-bottom: 50px;
+  
+}
+
+.ip-1, .ip-2, .ip-3{
+  border-radius: 5px;
+  border: 1px 1px solid gray;
+  width: 100%;
+  height: 50px;
+}
+
+#shop-button{
+  background: #E6D351;
+  color: #272727;
+  font-size: 20px;
+  border-radius: 4px;
+  border: 0;
+  width: 120px;
+  height: 60px;
+  float: right;
+  cursor: pointer;
+}
+
+#shop-button:hover{
+  background: #272727;
+  color: #E6D351;
+}
+
+
+/* ipad */
+
+@media(max-width: 768px){
+
+.shop-banner{
+  height: 450px;
+}
+
+
+
+}
+
+
+
+/* iphone5 */
+
+@media(max-width: 320px){
+
+.shop-banner{
+  height: 420px;
+}
+
+.shop-textarea{
+  width: 100%;
+  height: 300px; 
+ 
+}
+
+.form-textarea{
+  width: 84%;
+  float: none;
+  padding: 0 8%;
+}
+
+.form-input{
+  width: 84%;
+  float: none;
+  padding: 0 8%;
+  margin-top: 25px;
+}
+
+.iframe-rwd {
+    position: relative;
+    padding-bottom: 100%;
+    overflow: hidden;
+
+}
+
+.ip-1, .ip-2, .ip-3{
+  border-radius: 5px;
+  border: 1px 1px solid gray;
+  width: 100%;
+  height: 25px;
+}
+
+.form-input input{
+  margin-bottom: 25px;
+  
+}
+
+#shop-button{
+  background: #E6D351;
+  color: #272727;
+  font-size: 20px;
+  border-radius: 4px;
+  border: 0;
+  width: 270px;
+  height: 45px;
+  float: none;
+}
+
+}
+
+
+
+
+
+/*     login  登入     */
+
+
+.login-banner{
+  width: 100%;
+  height: 790px;
+  background-image: url(../images/cff-two.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.login-main{
+  background: #EFE9E7;
+
+}
+
+.login-contain{
+  padding: 50px 50px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.login-container{
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px 0;
+   
+}
+
+.login-title{
+  width: 100px;
+  padding-top: 5px;
+  border-top: 5px solid #E6D351;
+  margin: 0 auto;
+ 
+}
+
+.login-title h2, .login-title h3 {
+  font-size: 35px;
+  text-align: center;
+
+}
+
+
+.login-form label{
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  display: block;
+}
+
+.login-container input{
+  width: 100%;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.form-a-1{
+  color: #CC712B;
+  float: left;
+  font-size: 20px; 
+  margin-top: 15px;
+  display: block;
+}
+
+.form-a-2{
+  float: right;
+  color: #707070;
+  font-size: 20px; 
+  margin-top: 15px;
+  display: block;
+}
+
+.form-a-login{
+  text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 45px;
+  font-size: 20px;
+  color: #272727;
+  background: #E6D351;
+  border-radius: 10px;
+  display: block;
+}
+
+.form-a-login:hover{
+  background: #F6E155;
+}
+
+.form-fb-login{
+  color: white;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  background: #567CB3;
+  display: block;
+}
+
+.form-fb-login:hover{
+  background: #415D86;
+}
+
+/* ipad */
+
+@media (max-width: 768px){
+
+.login-banner{
+  height: 450px;
+}
+
+
+}
+
+/* iphone5 */
+
+@media (max-width: 320px){
+
+.login-banner{
+  height: 420px;
+}
+
+
+}
+
+
+/*      register  註冊      */
+
+
+.register-main{
+  background: #EFE9E7;
+}
+
+.register-container{
+  max-width: 940px;
+  margin: 0  auto;
+  padding: 50px 0px;
+
+}
+
+.register-contain{
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 20px;
+}
+
+.register-bg{
+  width: 30%;
+  height: 700px;
+  background-image: url(../images/register-bg.jpg);
+  background-size: cover;
+  float: left;
+  border-radius: 20px 0 20px 0;
+}
+
+.register-form{
+  width: 58%;
+  padding: 0 6%;
+  background: white;
+  float: right;
+  border-radius: 0 20px 0 20px;
+
+}
+
+.register-title{
+  font-size: 50px;
+  padding: 20px 0;
+  margin-top: 50px;
+  border-top: 5px solid #E6D351;
+  width: 40%;
+}
+
+.register-form label{
+  float: left;
+  display: block;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.register-form input{
+  float: left;
+  width: 100%;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+
+.reg-a-1{
+  float: left;
+  text-decoration: none;
+  color: #CC712B;
+  font-size: 20px; 
+  margin-top: 15px;
+  display: block;
+}
+
+.reg-a-2{
+  float: right;
+  text-decoration: none; 
+  color: #707070; 
+  font-size: 20px; 
+  margin-top: 15px;
+  display: block;
+}
+
+.reg-login{
+  margin: 40px 0;
+}
+
+.reg-fb-login{
+  float: left;
+  color: white;
+  font-size: 20px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  background: #567CB3;
+  display: block;
+}
+
+.reg-fb-login:hover{
+  background: #415D86;
+}
+
+.reg-a-login{
+  float: right;
+  text-decoration: none;
+  padding: 15px 40px;
+  font-size: 20px;
+  color: #272727;
+  background: #E6D351;
+  border-radius: 10px;
+  display: block;
+}
+
+.reg-a-login:hover{
+  background: #F6E155;
+}
+
+/* ipad */
+
+@media (max-width: 768px){
+
+  .login-banner{
+    height: 450px;
+  }
+
+  .register-container{
+    max-width: 740px;
+    margin: 0  auto;
+    padding: 50px 0px;
+  }
+
+
+}
+
+/* iphone5 */
+
+@media (max-width: 320px){
+
+  .register-contain{
+    background: white;
+    border-radius: 15px;
+
+  }
+
+
+  .register-bg{
+    width: 0;
+    height: 0px;
+    float: none;
+  }
+
+  .register-title{
+    font-size: 35px;
+    padding: 10px 0;
+    margin: 5px auto;
+    border-top: 5px solid #E6D351;
+    width: 65%;
+  }
+
+  .register-title h3{
+    text-align: center;
+    
+  }
+
+  .register-form{
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0px;
+    background: white;
+    float: none;
+  }
+
+  .reg-a-1, .reg-a-2{
+    font-size: 15px; 
+  }
+
+
+  .reg-fb-login, .reg-a-login{
+    float: none;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+
+}
+
+
+/*      online-new product     */
+
+#nav-border{
+  border-bottom: 2px solid #E6D351;
+}
+
+#onl-border{
+  border-right: 2px solid #E6D351;
+}
+
+.onl-banner{
+  max-width: 1230px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: url(../images/on-pd.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.onl-pd-title{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+
+}
+
+
+.onl-pd-word-c{
+  font-size: 35px;
+  margin-bottom: 5px;
+ 
+}
+
+.onl-pd-word-e{
+  font-size: 20px;
+  
+}
+
+.online-main{
+  width: 100%;
+  background: #E9E9E9;
+}
+
+.online-container{
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.online-side{
+  width: 15%;
+  float: left;
+  
+}
+
+.online-content{
+  width: 85%; 
+  float: left;
+  
+}
+
+.online-content li{
+  width: 19.33333%;
+  margin: 30px 5%;
+  float: left;
+  background: white;
+  padding: .5% 2%;
+  
+}
+
+
+
+.onl-img-1{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/alex.jpg);
+  background-size: cover;
+}
+
+.onl-img-2{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/arashiyama.jpg);
+  background-size: cover;
+}
+
+.onl-img-3{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/taina.jpg);
+  background-size: cover;
+}
+
+.onl-img-4{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/christmas-cup.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.onl-img-5{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/classic.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+
+.onl-img-6{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/christmas-chcocookies.jpg);
+  background-size: cover;
+  background-position: center right;
+}
+
+.onl-img-7{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/christmas-cookies.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.online-content p{
+  font-size: 20px;
+  padding: 15px 0 0 0;
+  
+}
+
+.onl-cart{
+  margin: 15px 0;
+}
+
+.onl-detail{
+  color: #272727;
+}
+
+.onl-addcartt{
+  float: right;
+  color: #CC712B;
+}
+
+.online-side h3{
+  font-size: 25px;
+  color: #707070;
+  margin-bottom: 40px;
+}
+
+.online-side a{
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  color: #767676;
+  width: 50%; 
+  margin-bottom: 25px;
+}
+
+.online-side a:hover{
+  color: #272727;
+}
+
+
+.open-online-side{
+  display: none;
+  font-size: 20px;
+  text-decoration: none;
+  color: #707070;
+  background: white;
+  padding: 3%;
+  
+}
+
+.online-side-sm{
+  margin-bottom: 30px;
+}
+
+.online-side-smm {
+  display: none;
+  margin-top: 30px;
+}
+
+.online-side{
+  width: 15%;
+  float: left;
+  
+}
+
+.online-side-smm h3{
+  font-size: 25px;
+  color: #707070;
+  margin-bottom: 40px;
+}
+
+.online-side-smm a{
+  display: block;
+  font-size: 20px;
+  text-decoration: none;
+  color: #272727;
+  width: 50%; 
+  margin-bottom: 25px;
+}
+
+
+/* ipad */
+
+@media (max-width: 768px){
+
+.onl-banner{
+  max-width: 700px;
+  height: 450px;
+}
+
+.online-container{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px 0 100px 0;
+}
+
+.online-side{
+  width: 100%;
+  float: none;
+  padding: 0 2%;
+  display: none; 
+}
+
+.online-side a{
+  width: 13%; 
+}
+
+
+.online-content{
+  width: 100%; 
+  float: left;
+  
+}
+
+.online-content li{
+  width: 30%;
+  margin: 30px 6%;
+  padding: .5% 4%;
+  float: left;
+  background: white;
+  
+}
+
+.open-online-side{
+  display: block;
+}
+
+.opennn .online-side-smm {
+ display: block;
+}
+
+
+}
+ 
+
+/* iphone5 */
+
+@media (max-width: 320px){
+
+  .onl-banner{
+    height: 420px;
+  }
+
+ 
+  .onl-pd-title{
+    bottom: 30px;
+    right: 28%;
+
+  }
+
+  .online-content li{
+    width: 72%;
+    margin: 30px 6%;
+    padding: .5% 8%;
+    float: left;
+    background: white;
+    
+  }
+
+  .online-side a{
+    width: 28%; 
+  }
+
+
+}
+
+
+
+
+
+
+/*      online coffee shop     */
+
+.onl-cof-title{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+
+}
+
+
+.onl-cof-banner{
+  max-width: 1230px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: url(../images/mike-kenneally.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.onl-cof-word-c{
+  font-size: 35px;
+  margin-bottom: 5px;
+ 
+}
+
+.onl-cof-word-e{
+  font-size: 20px;
+  
+}
+
+
+.onl-coffee-margin{
+  margin-left: 25px;
+}
+
+/*   ipad   */
+
+@media( max-width: 768px){
+  .onl-cof-banner{
+    max-width: 700px;
+    height: 450px;
+    
+}  
+
+}
+
+
+/*   iphone5   */
+
+@media (max-width: 320px){
+
+  .onl-cof-banner{
+    max-width: 700px;
+    height: 420px;
+  }
+
+
+  .onl-coffee-margin{
+    margin-left: 12px;
+  }
+
+
+  .onl-cof-title{
+    bottom: 30px;
+    right: 30%;
+
+  }
+
+}
+
+
+
+.onl-cof-img-1{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/alex.jpg);
+  background-size: cover;
+}
+
+.onl-cof-img-2{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/arashiyama.jpg);
+  background-size: cover;
+}
+
+.onl-cof-img-3{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/taina.jpg);
+  background-size: cover;
+}
+
+.onl-cof-img-4{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/bean.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+/* online coffee shop two */
+
+.onl-coftwo-img-1{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/blue.jpg);
+  background-size: cover;
+}
+
+.onl-coftwo-img-2{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/columbia.jpg);
+  background-size: cover;
+}
+
+.onl-coftwo-img-3{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/brazil.jpg);
+  background-size: cover;
+}
+
+.onl-coftwo-img-4{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/manter.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+/*    online related product    */
+
+.onl-rp-banner{
+  max-width: 1230px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: url(../images/banner-cup.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}  
+
+.onl-rp-title{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  color: black;
+
+}
+
+.onl-rp-word-c{
+  font-size: 35px;
+}
+
+.onl-rp-word-e{
+  font-size: 20px;
+}
+
+.onl-rp-margin{
+  margin-left: 52px;
+}
+
+.onl-rp-img-1{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/christmas-cup.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.onl-rp-img-2{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/word-cup.jpg);
+  background-size: cover;
+}
+
+.onl-rp-img-3{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/christmas.jpg);
+  background-size: cover;
+}
+
+.onl-rp-img-4{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/classic.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/*  ipad  */
+
+@media( max-width: 768px){
+  .onl-rp-banner{
+    max-width: 700px;
+    height: 450px;
+    
+}  
+
+}
+
+/*   iphone5   */
+
+@media( max-width: 320px){
+  .onl-rp-banner{
+    max-width: 700px;
+    height: 420px;
+
+}  
+
+  .onl-rp-title{
+    position: absolute;
+    bottom: 30px;
+    right: 62px;
+    color: white;
+
+  }
+
+  .onl-rp-margin{
+    margin-left: 28px;
+}
+
+}
+
+
+/*    online cookies gift     */
+
+.onl-gift-banner{
+  max-width: 1230px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: url(../images/cookk.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}  
+
+.onl-gift-title{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+
+}
+
+.onl-gift-word-c{
+  font-size: 35px;
+}
+
+.onl-gift-word-e{
+  font-size: 20px;
+}
+
+.onl-gift-margin{
+  margin-left: 15px;
+}
+
+.onl-gift-img-1{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/christmas-chcocookies.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.onl-gift-img-2{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/christmas-cookies.jpg);
+  background-size: cover;
+}
+
+.onl-gift-img-3{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/food-photographe.jpg);
+  background-size: cover;
+}
+
+.onl-gift-img-4{
+  height: 250px;
+  margin: 15px 0;
+  background-image: url(../images/brooke-lark.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+/*  ipad  */
+
+@media( max-width: 768px){
+  .onl-gift-banner{
+    max-width: 700px;
+    height: 450px;
+}  
+
+}
+
+/*   iphone5   */
+
+@media( max-width: 320px){
+  .onl-gift-banner{
+    height: 420px;
+
+}  
+
+  .onl-gift-title{
+    position: absolute;
+    bottom: 30px;
+    right: 40%;
+    color: black;
+
+  }
+
+  .onl-gift-margin{
+    margin-left: 8px;
+}
+
+}
+
+
+
+
+/*       about us       */
+
+.about-main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-container{
+  width: 100%;
+}
+
+.about-container h2{
+  font-size: 30px;
+  margin: 40px 0 40px 0;
+}
+
+.about-banner{
+  background-image: url(../images/mise.jpg);
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+  height: 600px;
+}
+
+
+.about-title{
+  position: relative;
+  margin: 0 auto;
+  
+}
+
+.about-bg{
+  width:260px;
+  height: 180px;
+  background-color: black;
+  opacity: 50%;
+  position: absolute;
+  
+
+ }
+
+.span-txt{
+  margin-left: 120px;
+}
+
+.about-txt h3{
+  font-size: 60px;
+  color: white;
+  position: absolute;
+  padding: 30px;
+  z-index: 1;
+  right
+}
+
+.about-container p{
+  margin: 70px 0 70px 0;
+  padding: 0 15px;
+  font-size: 15px;
+  letter-spacing: 3px;
+  line-height: 50px;
+}
+
+
+/* ipad */
+
+@media(max-width: 768px){
+
+.about-banner{
+  background-image: url(../images/about-us-ipad.png);
+  background-size: cover;
+  max-width: 100%;
+  height: 450px;
+}
+
+.about-container h2{
+  padding-left: 10px;
+}
+
+}
+
+
+
+
+/* iphone5 */
+
+@media(max-width: 320px){
+
+.about-banner{
+  background-image: url(../images/about-us-iphone.png);
+  background-size: cover;
+  max-width: 100%;
+  height: 420px;
+}
+
+}
